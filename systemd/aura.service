@@ -1,0 +1,13 @@
+[Unit]
+Description=Aura heartbeat receiver
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/apps/aura
+ExecStart=/usr/bin/python3 /opt/apps/aura/receiver/aura.py run
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

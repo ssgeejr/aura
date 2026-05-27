@@ -1,0 +1,2 @@
+name,ip,port,last_contact,status
+sensor01,127.0.0.1,5150,,UNKNOWN
